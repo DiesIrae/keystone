@@ -10,7 +10,9 @@ export const lists: Lists = {
       searchFields: ['title', 'content'],
     },
     fields: {
-      title: text({ validation: { isRequired: true } }),
+      title: text({ validation: { isRequired: true },ui:{description:`
+      desc1
+      desc2` }}),
       status: select({
         type: 'enum',
         options: [
